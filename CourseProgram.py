@@ -30,6 +30,7 @@ def main():
           #course.set_seats(seats)
           #print(seats)
           print('Student Name:', students[0])
+          #students[] += 1
           print('Course Name:', course.get_name())
           print('CRN:', course.get_crn())
           print('Seats left:', seats, '\n')
