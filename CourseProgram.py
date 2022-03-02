@@ -8,6 +8,7 @@ You have been given partial code. The objective is to reproduce the output as sh
    and the output should reflect that as shown in the picture.
 '''
 
+import CourseClass as cc
 
 
 def main():
@@ -18,7 +19,24 @@ def main():
     status = 'open'
     students = ['John','James','Jill','Jack','Joanne']
 
-    
+    course = cc.Course(name,crn,seats,status)
+    register = cc.Register(name,crn)
+
+    #count = 4
+
+    for words in students:
+       if seats > 0:
+          seats -= 1
+          #course.set_seats(seats)
+          #print(seats)
+          print('Student Name:', students[0])
+          print('Course Name:', course.get_name())
+          print('CRN:', course.get_crn())
+          print('Seats left:', seats, '\n')
+       else:
+          #course.set_status('closed') 
+          print('\n',"Sorry", students[4], "registration is", course.get_status(), "for", course.get_name(),'\n' )
+
 main()
 
 

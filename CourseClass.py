@@ -19,6 +19,12 @@ class Course:
     def get_status(self):
         return self.__status
 
+    #def set_seats(self):
+        #return self.__seats
+
+    #def set_status(self):
+        #return self.__status
+
 
     def update_seat_count(self):
         if self.__seats == 0:
